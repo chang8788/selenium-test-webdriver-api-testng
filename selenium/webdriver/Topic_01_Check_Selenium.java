@@ -27,6 +27,12 @@ public class Topic_01_Check_Selenium {
 	  Assert.assertEquals(homePageTitle, "Facebook - Đăng nhập hoặc đăng ký");
   }
   @Test
+  public void TC_04() {
+	  String homePageTitle = driver.getTitle();
+	  
+	  Assert.assertEquals(homePageTitle, "Facebook - Đăng nhập hoặc đăng ký");
+  }
+  @Test
   public void TC_02_Check_Url() {
 	  String homePageUrl = driver.getCurrentUrl();
 	  Assert.assertEquals(homePageUrl, "https://www.facebook.com/");
